@@ -1,0 +1,91 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[margin=1.08in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage[nameinlink,capitalise,noabbrev]{cleveref}
+\usepackage{enumitem}
+\usepackage{setspace}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!45!black,
+  citecolor=blue!45!black,
+  urlcolor=blue!45!black,
+  pdftitle={Pseudo-Calabi--Yau geometry on the smooth locus of the announced complex six-sphere},
+  pdfauthor={}
+}
+
+\setlength{\parindent}{1.2em}
+\setlength{\parskip}{0.25em}
+\setstretch{1.04}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{question}[theorem]{Question}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\PP}{\mathbb{P}}
+\newcommand{\TT}{\mathbb{T}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cV}{\mathcal{V}}
+\newcommand{\cW}{\mathcal{W}}
+\newcommand{\Wspace}{\mathsf{W}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\vol}{\operatorname{vol}}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\Hol}{\operatorname{Hol}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\im}{\operatorname{Im}}
+\newcommand{\re}{\operatorname{Re}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\ii}{\mathrm{i}}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\Gsplit}{G_{2(2)}}
+\newcommand{\SUone}{SU(1,2)}
+\newcommand{\SUthree}{SU(3)}
+\newcommand{\pair}[2]{\left\langle #1,#2\right\rangle}
+
+\title{\bfseries Pseudo-Calabi--Yau Geometry on the Smooth Locus\\[0.2em]
+\bfseries of the Announced Complex Six-Sphere\\[0.35em]
+\large A null period curve and the semi-flat split-$G_2$ correspondence}
+\author{}
+\date{24 August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Assume Alp\"oge's announced construction~\cite{Alpoge} of a compact complex threefold $X$ diffeomorphic to $S^6$, fibred over $\PP^1$ by complex two-tori away from three special fibres.  We show that the smooth torus-fibred locus $X^\circ$ carries a natural semi-flat torsion-free $SU(1,2)$ structure, and therefore a Ricci-flat pseudo-K\"ahler metric of real signature $(2,4)$.
+
+The construction is controlled by the fibrewise intersection form on $H^2(\TT^4,\RR)\cong\RR^{3,3}$.  Alp\"oge's monodromy fixes a primitive class
+\[
+  \eta=u\wedge w+6\gamma\wedge\delta
+\]
+of fibrewise type $(1,1)$ and signature $(1,1)$.  The meromorphic canonical form with divisor $2S_2-W$ restricts to a nowhere-vanishing holomorphic three-form $\Xi$ on $X^\circ$ and determines a holomorphic period one-form $\alpha=A(z)\,\dd z$.  If $\Omega=\sigma_1\wedge\sigma_2$ generates the fibrewise $(2,0)$ line, then
+\[
+ q(\eta,\eta)=12,\qquad q(\eta,\Omega)=0,\qquad
+ q(\Omega,\Omega)=0,\qquad
+ q(\Omega,\overline\Omega)=4\,\im\tau\,D,
+\]
+where $D=\im\beta-6(\im\mu)^2/\im\tau<0$.  These identities yield an explicit closed form
+\[
+ \omega=\frac{1}{\sqrt6}\eta-f^*\!\left(\frac{1}{8\ii}q(\alpha,\overline\alpha)\right)
+\]
+with $(\omega,\Xi)$ normalized as an $SU(1,2)$ structure.
+
+The same data admit a period-domain interpretation.  A primitive of $\alpha$ is a holomorphic null curve in $\eta^\perp_\CC$, and its real part, together with the $\eta$ direction, defines a linearly full minimal immersion of signature $(1,2)$ into $\RR^{3,3}$.  Baraglia's split semi-flat correspondence reproduces the cylindrical torsion-free split-$G_2$ structure on $X^\circ\times S^1$.  The sign of $D$ simultaneously determines the signature of the Hodge three-plane and the real determinant of the torus period lattice, so $D=0$ is the common degeneration wall.  Finally, neither the pseudo-Calabi--Yau structure nor its cylindrical split-$G_2$ li
