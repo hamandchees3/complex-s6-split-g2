@@ -1,0 +1,81 @@
+y of the period one-form supplies the minimal-surface equation, while its negative Hermitian norm selects the split signature.  The product lift to split $G_2$ is then formal; the substantive geometry lies in the pseudo-Calabi--Yau structure and in the period immersion that reconstructs it.
+
+There is also a limited but precise comparison with the standard nearly K\"ahler six-sphere.  The round structure is associated with the compact pair $(G_2,SU(3))$, whereas the structure obtained here is associated on the smooth locus with $(G_{2(2)},SU(1,2))$.  These are real forms of the same complex pair $(G_2^\CC,SL(3,\CC))$.  No deformation or direct correspondence between the two almost-complex structures is asserted.
+
+The paper is organized as follows.  \Cref{sec:data,sec:wedge} extract the required period identities from Alp\"oge's construction.  \Cref{sec:pseudocy} gives a general semi-flat $SU(1,2)$ criterion and applies it to $X^\circ$.  \Cref{sec:g2lift,sec:minimal} describe the split-$G_2$ lift and its minimal-period interpretation.  \Cref{sec:discriminant} identifies the compact/split discriminant, and \cref{sec:extension} proves the global extension obstructions.
+
+\section{The torus-period data}\label{sec:data}
+
+We record the inputs from Alp\"oge's manuscript needed for the construction.
+
+\subsection{The smooth family and the intersection space}
+
+Let
+\[
+ f^\circ:X^\circ\longrightarrow B^\circ
+\]
+be the smooth proper holomorphic submersion obtained by deleting the cusp fibre and the two multiple bielliptic fibres.  Its fibres are complex tori of complex dimension two.  On the universal cover one has a flat real presentation
+\[
+ \widetilde B^\circ\times (\Lambda_\RR/\Lambda),
+ \qquad \Lambda\cong\ZZ^4,
+\]
+with linear monodromy in $SL(4,\ZZ)$.  Let
+\[
+ V=\operatorname{Hom}(\Lambda,\ZZ)
+\]
+after choosing the dual basis $(\gamma,u,w,\delta)$, and write
+\[
+ \Wspace=\Lambda^2V,\qquad \Wspace_\RR=\Wspace\otimes\RR.
+\]
+Fix
+\[
+ \nu=\gamma\wedge u\wedge w\wedge\delta.
+\]
+The symmetric bilinear form $q$ on $\Wspace_\RR$ is defined by
+\begin{equation}\label{eq:qdef}
+ E\wedge E'=q(E,E')\nu.
+\end{equation}
+It has signature $(3,3)$.  Indeed the complementary pairs
+\[
+ (\gamma u,w\delta),\qquad
+ (\gamma w,-u\delta),\qquad
+ (\gamma\delta,uw)
+\]
+are three hyperbolic planes.  Here and below juxtaposition abbreviates the wedge product.
+
+The monodromy fixes the primitive class
+\begin{equation}\label{eq:eta}
+ \eta=uw+6\gamma\delta.
+\end{equation}
+\begin{lemma}[Global flat representative]\label{lem:globaleta}
+The class $\eta$ has a globally defined, fibrewise translation-invariant, closed real two-form representative on $X^\circ$.  The vertical volume form $\nu$ likewise descends globally.
+\end{lemma}
+
+\begin{proof}
+Pull the family back to the uniformizing cover and use the real marking
+\[
+ \widetilde B^\circ\times(\Lambda_\RR/\Lambda).
+\]
+In the corresponding fibre coordinates the representatives are the constant forms
+\[
+ \eta_X=\dd x_u\wedge\dd x_w+6\dd x_\gamma\wedge\dd x_\delta,
+ \qquad
+ \nu_X=\dd x_\gamma\wedge\dd x_u\wedge\dd x_w\wedge\dd x_\delta.
+\]
+They are closed.  By Alp\"oge's flat-real description~\cite[Rem.~3.20]{Alpoge}, a deck transformation acts exactly by
+\[
+  (z,x)\longmapsto (gz,M_g^{-1}x),
+\]
+with $M_g\in SL(4,\ZZ)$ constant.  The induced action fixes $\eta$ by the monodromy-invariant-form calculation and preserves $\nu$ because $\det M_g=1$.  Hence both constant vertical forms descend to $X^\circ$.  The translation regluings used to attach the special fibres do not alter this statement: after those fibres are removed, Construction~6.1 identifies the resulting open family with the original family $J|_{B^\circ}$.
+\end{proof}
+
+We suppress the subscript $X$ when no confusion can arise.
+
+\subsection{The period matrix}
+
+Alp\"oge constructs holomorphic functions $\tau,\mu,\beta$ on the upper-half-plane uniformizing cover and the period matrix
+\begin{equation}\label{eq:Pi}
+ \Pi(z)=
+ \begin{pmatrix}
+ 6\mu(z)&\tau(z)&1&0\\
+ \beta(z)&\m
